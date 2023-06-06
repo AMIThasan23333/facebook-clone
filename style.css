@@ -789,10 +789,35 @@ main .container .right {
 }
 
 
+.customize-theme  .choose-color span.active {
+    border: 5px solid white;
+}
+
+
+.customize-theme .choose-bg {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
 
 
 
+.customize-theme .choose-bg > div {
 
+    padding: var(--card-padding);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .4rem;
+    cursor: pointer;
+    
+
+}
+ 
 
 
 
