@@ -2,6 +2,18 @@
 
 const menuItems = document.querySelectorAll(".menu-item")
 
+
+
+const messagesNotifiacation =document.querySelector("#messages-notifications")
+
+
+const messages = document.querySelector('.messages')
+
+
+
+
+
+
   const changeActiveItem = () => {
     menuItems.forEach(item => {
         item.classList.remove('active')
@@ -20,7 +32,26 @@ const menuItems = document.querySelectorAll(".menu-item")
             document.querySelector('.notofications-popup').style.display ='block';
 
             document.querySelector('.notification-count').style.display='none';
-            
+
         }
     })
+  })
+
+
+  /* =========messages===============*/
+
+
+
+  messagesNotifiacation.addEventListener('click', () => {
+
+    messages.style.boxShadow = '0 0 1rem var(--color-primary)'
+
+    messagesNotifiacation.querySelector('.notification-count').style.display= 'none';
+
+    setTimeout(() => {
+
+        messages.style.boxShadow = 'none'
+
+    }, 3000)
+
   })
